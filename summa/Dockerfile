@@ -1,5 +1,7 @@
 FROM nginx:latest
 # Copy the built files from the previous stage
+RUN rm -rf /usr/share/nginx/html/*
+
 COPY /build /usr/share/nginx/html
 # Expose port 80 (the default HTTP port)
 EXPOSE 80
