@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/balachandrankk/guvi_dev_final.git'
+                git branch: 'master', url: 'https://github.com/Thejus-u/guvi.git'
             }
         }
 
